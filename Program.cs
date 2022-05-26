@@ -23,8 +23,11 @@ namespace Decisions
             else if (userValue == "3")
                 message = "You won a new cat!";
             else
-                message = "Sorry, we didn't understand.";
-
+            {
+                message = "Sorry, we didn't understand. ";
+                //message = message + "You lose.";
+                message += "You lose.";
+            }
             Console.WriteLine(message);
             Console.ReadLine();
 
